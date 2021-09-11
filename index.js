@@ -1,3 +1,30 @@
+//HOW TO PLAY VARIABLES
+let battleBtn = document.getElementById("battle-system-btn"),
+battleContainer = document.getElementById("battle-container");
+//HOW TO PLAY VARIABLES
+
+//HOW TO PLAY FUNCTIONALITY
+
+//BATTLE SYSTEM DISPLAY
+
+function checkDisplay(){
+  
+  if(battleContainer.classList.contains("disappears")){
+    battleContainer.classList.remove("disappears");
+    battleContainer.classList.add("appears");
+    battleBtn.style.backgroundImage = "url(https://meltyblood.typelumina.com/resources/img/en/howto/btn_battle_d80e72ab21e59317216a5bc8b4536ca7.png)"//HELP THIS LINE DOESN'T WORK
+  }else if(battleContainer.classList.contains("appears")){
+    battleContainer.classList.remove("appears");
+    battleContainer.classList.add("disappears");
+  }
+
+}
+
+battleBtn.addEventListener("click",checkDisplay);
+//BATTLE SYSTEM DISPLAY
+
+//HOW TO PLAY FUNCTIONALITY
+
 //MAIN PROMO VARIABLES
 let screenLoad = document.getElementById("load-wrapper");
 let promo = document.getElementById("promoSection");
