@@ -122,7 +122,8 @@ h1,
   display: block;
   width: 998px;
   height: 82px;
-  background: top no-repeat;
+  background: url(https://meltyblood.typelumina.com/resources/img/en/howto/btn_battle_d80e72ab21e59317216a5bc8b4536ca7.png)
+    top no-repeat;
   margin-left: 14px;
   cursor: pointer;
   margin: 0 auto;
