@@ -1,0 +1,814 @@
+/*Page settings*/
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 20%);
+  position: relative;
+  overflow-x: hidden;
+}
+/*Page settings*/
+
+/*LOAD ANIAMTION START*/
+.load-wrapper {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: 10;
+  overflow: hidden;
+}
+.load-circle1 {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/circle_base_8db3633fc4f2b9de22f79cc39f9ab32a.png);
+  background-repeat: no-repeat;
+  background-position-x: -30px;
+  background-position-y: -550px;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+  height: 1201px;
+  z-index: 0;
+}
+.load-circle2 {
+  background-image: url(https://meltyblood.typelumina.com/resources/img/common/circle_move_e49fd7bce497b9e1c0769c27e69d29af.png);
+  background-repeat: no-repeat;
+  background-position-x: -30px;
+  background-position-y: -500px;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+  height: 1201px;
+  z-index: 12;
+}
+
+.load-circle3-animated {
+  background-position-x: -20px;
+  background-position-y: 0px;
+  background-image: url(https://meltyblood.typelumina.com/resources/img/common/circle_move_e49fd7bce497b9e1c0769c27e69d29af.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -500px;
+  width: 1280px;
+  height: 1201px;
+  animation: loadRotate 10s linear infinite;
+  z-index: 13;
+}
+
+@keyframes loadRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.load-text {
+  background-image: url(https://meltyblood.typelumina.com/resources/img/common/loading_half_4de4367bd41138fa8e35e6b941b1292a.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 200px;
+  height: 30px;
+  animation: loadFlash 2s ease-in infinite;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes loadFlash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+.fade-off {
+  animation: fadeOff 0.4s 1 forwards;
+}
+@keyframes fadeOff {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*LOAD ANIAMTION END*/
+
+/*HEADER START*/
+
+.header {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_bg_c5fc56ea57d029a3d1849c0cd839a4cd.jpg)
+    100% 100% no-repeat;
+  height: 85px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 7;
+}
+
+.head-content {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  margin: 0 40px 0 0;
+  padding: 10px 5px 0;
+}
+
+.header li {
+  list-style: none;
+}
+.header li img {
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.header li:first-child img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_nav_home_312eb684ceb4928f9cab2114f5fb831b.png)
+    0 0 no-repeat;
+  background-size: 100% 200%;
+  width: 130px;
+  height: 60px;
+}
+.header li:first-child a:hover img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_nav_home_312eb684ceb4928f9cab2114f5fb831b.png)
+    0 -60px no-repeat;
+  background-size: 100% 200%;
+}
+.header li:nth-child(2) img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_nav_character_5a1daa5005e59f01c748ce30919c022e.png)
+    0 0px no-repeat;
+  background-size: 100% 200%;
+  width: 180px;
+  height: 60px;
+}
+.header li:nth-child(2) a:hover img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_nav_character_5a1daa5005e59f01c748ce30919c022e.png)
+    0 -60px no-repeat;
+  background-size: 100% 200%;
+}
+.header li:nth-child(2) {
+  position: relative;
+}
+.header li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 22px;
+  width: 60px;
+  height: 30px;
+  background: url(https://meltyblood.typelumina.com/resources/img/common/new_32f7aa232078c1fa86580a6b031d32e4.png) -4px -1px
+    no-repeat;
+}
+
+.header li:last-child img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_nav_htp_b810322913c6d63ea8935f6ae90302a0.png)
+    0 0px no-repeat;
+  background-size: 100% 200%;
+  width: 190px;
+  height: 60px;
+}
+.header li:last-child a:hover img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_nav_htp_b810322913c6d63ea8935f6ae90302a0.png)
+    0 -60px no-repeat;
+  background-size: 100% 200%;
+}
+
+.head-logo-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_logo_8b11870e0c41ba6e328491682bde25f9.png)
+    0 no-repeat;
+  background-size: 100% 150%;
+  background-position-y: -15px;
+  width: 280px;
+  height: 80px;
+}
+
+.head-logo-img img {
+  width: 100%;
+  height: 100%;
+}
+.head-logo-img:hover {
+  opacity: 0.85;
+}
+
+.head-product-img img {
+  background: url(https://meltyblood.typelumina.com/resources/img/common_en/header_product_info_btn_8759ff4ef2b776a235061611733c35e2.png)
+    no-repeat;
+  background-size: 100% 120%;
+  width: 200px;
+  height: 75px;
+}
+.head-product-img:hover {
+  opacity: 0.85;
+}
+
+/*HEADER END*/
+
+/*PLAYABLE CONSOLES MICRO-SECTION*/
+.console-top-div {
+  position: absolute;
+  top: 83px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: hsla(0, 0%, 0%, 0.65);
+}
+.console-top-div div {
+  margin: 0 auto;
+}
+.console-top-div img {
+  padding: 5px;
+  margin: 5px;
+  width: 110px;
+  height: 35px;
+}
+.console-top-div div:last-child {
+  margin: 0 auto;
+  width: 130px;
+}
+
+.console-top-div img:last-child {
+  background: url(https://meltyblood.typelumina.com/resources/img/common/header_lang_btn_9b6e3d093e0815b764a0b14837481eab.png)
+    no-repeat;
+  margin: 0 auto;
+}
+
+.console-top-div img:last-child:hover {
+  opacity: 0.8;
+}
+/*PLAYABLE CONSOLES MICRO-SECTION*/
+
+/*MAIN PROMO SECTION START*/
+
+.promo-section {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/bg1_df3d7aa4fa678e8e80662eef6d8bd770.jpg)
+    center top no-repeat;
+  margin-top: -95px;
+}
+.tittle-date {
+  height: 875px;
+}
+.tittle-date div {
+  display: flex;
+  justify-content: center;
+}
+
+.tittle-date .first-img {
+  margin-top: 370px;
+  width: 780px;
+  height: 200px;
+}
+.tittle-date .second-img {
+  width: 550px;
+}
+
+.general-information {
+  position: relative;
+}
+.general-information div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.deluxe {
+  position: relative;
+  height: 60px;
+}
+.deluxe img {
+  width: 410px;
+  height: 100px;
+  position: absolute;
+  right: 90px;
+}
+.deluxe img:hover {
+  opacity: 0.9;
+}
+
+.info {
+  background: url(https://meltyblood.typelumina.com/resources/img/top_en/fv_spec_7845a9fa7654aefaa89999fca41e7568.png);
+  background-size: 100% 100%;
+  width: 520px;
+  height: 234px;
+  margin-bottom: 30px;
+  padding-bottom: 250px;
+}
+.info-table {
+  color: whitesmoke;
+  font-family: serif;
+  font-size: 0.8em;
+  margin: 5px 0 0 45px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border-spacing: 9px;
+}
+.info-table th {
+  text-align: left;
+  padding-right: 5px;
+}
+
+.twitter {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/fv_timeline_2356f2d2e03f161ade65553eb4e3547d.png);
+  width: 520px;
+  height: 230px;
+  margin: 70px 0 10px;
+}
+
+.twitter-link {
+  overflow-y: scroll;
+  height: 200px;
+  width: 435px;
+  margin: 15px 85px;
+}
+.twitter-link::-webkit-scrollbar {
+  width: 0px;
+}
+/*MAIN PROMO SECTION END*/
+
+/*MISC SETTINGS*/
+
+.text-block {
+  color: whitesmoke;
+  background-color: hsla(230, 100%, 15%, 0.7);
+  text-align: justify;
+  line-height: 25px;
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.js-scroll {
+  transition: opacity 500ms;
+}
+.js-scroll.scrolled {
+  opacity: 1;
+}
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*MISC SETTINGS*/
+
+/*REBORN SECTION START*/
+.reborn-section {
+  width: 100%;
+  background: url(https://meltyblood.typelumina.com/resources/img/top/bg2_cafb5f75f47564ba9a0b9e3fb4db5fd6.jpg)
+    no-repeat;
+  background-position: center top;
+}
+.rebornTopSection div:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+.top-reborn-txt {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.reborn-video {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.rVideoLink1 {
+  display: inline-block;
+  margin: 17px 0 0 -20px;
+}
+
+.rVideoLink1 span {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/v2_ss_frame_bbd104631cfc0da11e570a015a42658b.png)
+    no-repeat 0 0;
+  position: relative;
+  display: block;
+  width: 545px;
+  height: 336px;
+}
+
+.rVideoLink1 span:hover {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/v2_ss_frame_bbd104631cfc0da11e570a015a42658b.png)
+    no-repeat 0 -336px;
+}
+.rVideoLink1 span::before {
+  background: url(https://meltyblood.typelumina.com/resources/img/top_en/movie1_label_bb9b7c469db2ac5141764fca4c5157b3.png);
+  content: "";
+  height: 45px;
+  width: 500px;
+  position: absolute;
+  top: 8px;
+  left: 27px;
+  z-index: 2;
+}
+
+.rVideoLink1 span::after {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/play_e31382cd3e53e2154113ffb3f529138b.png);
+  width: 110px;
+  height: 111px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: auto;
+}
+
+.rVideo1 {
+  position: absolute;
+  top: 36px;
+  left: 38px;
+  width: 470px;
+  height: 263px;
+  pointer-events: none;
+}
+
+.rVideoLink2 {
+  display: inline-block;
+  margin-top: 152px;
+}
+
+.rVideo2 {
+  position: absolute;
+  top: 34px;
+  left: 34px;
+  width: 298px;
+  height: 167px;
+  pointer-events: none;
+}
+
+.rVideoLink2 span {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/v2_ss_frame_s_afd8530510bc74b2a99b3f782fe0fd91.png)
+    no-repeat 0 0;
+  position: relative;
+  display: block;
+  width: 363px;
+  height: 234px;
+}
+.rVideoLink2 span:hover {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/v2_ss_frame_s_afd8530510bc74b2a99b3f782fe0fd91.png)
+    no-repeat 0 -234px;
+}
+
+.rVideoLink2 span::before {
+  background: url(https://meltyblood.typelumina.com/resources/img/top_en/movie2_label_3c75de0badda687b0d1b00cb648ba31a.png);
+  content: "";
+  height: 42px;
+  width: 312px;
+  position: absolute;
+  top: 11px;
+  left: 27px;
+  z-index: 2;
+}
+
+.rVideoLink2 span::after {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/play_s_3a4462f7b3c3499e2b11d7f0078cc166.png);
+  width: 80px;
+  height: 81px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: auto;
+}
+
+/*MELTY REBORN SECTION 1 - ARCUEID PORTRAIT SECTION START*/
+
+.arc-protrait-section {
+  display: flex;
+  width: 850px;
+  margin: 30px 15px;
+}
+
+.arc-p-container {
+  position: relative;
+  width: 150px;
+  margin: 15px;
+}
+
+.arc-main-protrait {
+  position: absolute;
+  top: -90px;
+  left: -100px;
+}
+
+.arc-subcontainer {
+  width: 100%;
+  padding-left: 150px;
+}
+
+.arcP-textImg {
+  background: url(https://meltyblood.typelumina.com/resources/img/top_en/v3_title_fd9f66ce59e976b6d0c693fdac61ef9f.png) -10px
+    0;
+  display: block;
+  width: 837px;
+  height: 216px;
+  margin-left: -45px;
+}
+
+.arcP-text {
+  width: 675px;
+  text-align: left;
+  display: block;
+  padding: 6px 10px 15px 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.char-link {
+  display: block;
+  width: 495px;
+  height: 86px;
+  margin: 0 auto;
+}
+.char-link-img {
+  display: block;
+  margin: 0 auto;
+}
+.char-link:hover {
+  opacity: 0.9;
+}
+
+.game-preview-img1 {
+  background: url(https://meltyblood.typelumina.com/resources/img/top_en/v3_ss1_thumb_b375034bc458fc6549823257b7560ec0.png)
+    0 0;
+  width: 613px;
+  height: 380px;
+  display: block;
+  margin: 0 auto;
+}
+.game-preview-img1:hover {
+  background: url(https://meltyblood.typelumina.com/resources/img/top_en/v3_ss1_thumb_b375034bc458fc6549823257b7560ec0.png)
+    0 -380px;
+}
+/*MELTY REBORN SECTION 1 - ARCUEID PORTRAIT SECTION END*/
+
+/*MELTY REBORN SECTION 2 - SHIKI PORTRAIT SECTION START*/
+.shiki-protrait-section {
+  display: flex;
+  width: 100%;
+  margin-top: -20px;
+  overflow-y: hidden;
+}
+.shiki-p-container {
+  position: relative;
+  width: 500px;
+}
+.shiki-main-protrait {
+  position: absolute;
+  right: -140px;
+  top: -50px;
+}
+.shiki-subcontainer {
+  z-index: 2;
+}
+.game-preview-img2 {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/v3_ss2_thumb_46171993f97616cc5a8311b2b8174264.png)
+    0 0 no-repeat;
+  width: 613px;
+  height: 380px;
+  display: block;
+  margin-left: 60px;
+}
+.game-preview-img2:hover {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/v3_ss2_thumb_46171993f97616cc5a8311b2b8174264.png)
+    0 -381px;
+}
+.shikiP-textImg {
+  display: block;
+}
+.shikiP-text {
+  margin-left: -20px;
+  width: 680px;
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: 100;
+}
+.htplay-link {
+  display: block;
+  margin: 0 auto;
+}
+.htplay-link-img {
+  display: block;
+  margin: 20px auto;
+}
+.htplay-link:hover {
+  opacity: 0.8;
+}
+/*MELTY REBORN SECTION 2 - SHIKI PORTRAIT SECTION END*/
+
+/*REBORN SECTION END*/
+
+/*MELTY DELUXE SECTION START*/
+.deluxe-section {
+  background: url(https://meltyblood.typelumina.com/resources/img/shopguide/sec3_bg_b8b54e693316161522bd2f16143eb9fd.jpg);
+  z-index: 4;
+}
+.deluxe-top-text img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.deluxe-price {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  width: 50px;
+}
+.deluxe-price img {
+  position: absolute;
+  top: 8px;
+  right: -345px;
+  margin: 0 auto;
+}
+.deluxe-main-content {
+  background: url(https://meltyblood.typelumina.com/resources/img/top_en/v5_frame_1762ae76df205c1403f8ed06a49f276a.png)
+    no-repeat;
+  display: block;
+  margin: 0 auto;
+  padding: 17px;
+  width: 760px;
+  height: 700px;
+}
+.deluxe-mid-tittle img {
+  display: block;
+  margin: 10px auto;
+}
+.deluxe-mid-img img {
+  display: block;
+  margin: 10px auto;
+}
+.deluxe-mid-info img {
+  display: block;
+  margin: 10px auto;
+}
+.deluxe-prod-info-link img {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+/*MELTY DELUXE SECTION END*/
+
+/*STAFF SECTION START*/
+.staff-section {
+  background: url(https://meltyblood.typelumina.com/resources/img/top/v6_staff_bg_e543aba34bf0ecf3a1f6799068acab06.png)
+    no-repeat;
+  padding: 30px 0;
+  margin: 0;
+}
+.staff-text-img img {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+}
+.staff-info img {
+  display: block;
+  margin: 0 auto;
+}
+/*STAFF SECTION END*/
+
+/*Page Footer Start*/
+#pageFooter {
+  background: black;
+  padding: 10px 0;
+}
+.social-link {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.social-link a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.social-link img:last-child {
+  position: sticky;
+  right: 40px;
+  bottom: 40px;
+}
+.footer-consoles {
+  border-top: darkgray 2px solid;
+  border-bottom: darkgray 2px solid;
+  padding: 10px;
+  display: flex;
+}
+.footer-consoles img {
+  display: block;
+  margin: auto;
+}
+.rating {
+  padding: 10px;
+}
+.rating ul {
+  display: flex;
+  justify-content: center;
+}
+.rating li {
+  list-style: none;
+}
+.rating li > img {
+  width: 55px;
+  height: 60px;
+  margin: 0 5px;
+}
+.disclaimer {
+  padding: 10px;
+}
+.copyR-imgs {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.copyR-imgs img {
+  margin: 0 auto;
+}
+.disclaimer p {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+}

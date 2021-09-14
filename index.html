@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="https://meltyblood.typelumina.com/resources/img/favicon.ico">
     <title>MELTY BLOOD: TYPE LUMINA UNOFFICIAL WEBSITE</title>
 </head>
 
-<body style="background-color: hsl(0, 0%, 20%); position: relative; overflow-x: hidden;" id="page">
+<body onload="load()" id="page">
 
-    <div id="topPage" class="main-page">
+    <div id="topPage" class="main-page" style="width: 100%;">
 
         <header class="header">
             <div class="head-content">
@@ -28,18 +28,18 @@
                         </a>
                     </li>&nbsp;
                     <li>
-                        <a href="">
+                        <a href="./html/character.html">
                             <img src="./image/blank.png">
                         </a>
                     </li>&nbsp;
                     <li>
-                        <a href="">
+                        <a href="./html/how.html">
                             <img src="./image/blank.png">
                         </a>
                     </li>&nbsp;
                 </ul>
     
-                <a href="./" class="head-product-img">
+                <a href="./html/product.html" class="head-product-img">
                     <img src="./image/blank.png">
                 </a>
     
@@ -48,7 +48,7 @@
         
         <div class="console-top-div">
     
-            <div class="logos-top">
+            <div>
     
                 <img src="https://meltyblood.typelumina.com/resources/img/common/header_ps4_0981406c7e01c64b35caa1259232e9bb.png" alt="">
                 <img src="https://meltyblood.typelumina.com/resources/img/common/header_ns_cc59be14b827a367aef10ee51106f103.png" alt="">
@@ -56,9 +56,9 @@
                 <img src="https://meltyblood.typelumina.com/resources/img/common/header_steam_917c91c71c60bc859e3584ef9ef1b4f0.png" alt="">
     
             </div>
-            <div class="language">
+            <div>
     
-                <a href="# " class="lang-button"><img src="./image/blank.png"></a>
+                <a href="./"><img src="./image/blank.png"></a>
     
             </div>
     
@@ -67,10 +67,10 @@
     
             <div class="tittle-date">
     
-                <div style="display: flex; justify-content: center;">
+                <div>
                     <img class="first-img" src="https://meltyblood.typelumina.com/resources/img/top/fv_title_13568e059c5ebdd2da48d6de2537caf1.png" alt="">
                 </div>
-                <div style="display: flex; justify-content: center;">
+                <div>
                     <img class="second-img" src="https://meltyblood.typelumina.com/resources/img/top_en/fv_date_75fd9210e3f2ee7f239481a52258196c.png" alt="">
                 </div>
     
@@ -79,12 +79,12 @@
     
                 <div class="deluxe">
     
-                    <a href="./">
-                        <img class="deluxe-img" src="https://meltyblood.typelumina.com/resources/img/top_en/limited_banner_d039d3a0256a7dd0b6144ff9ee57ff41.png">
+                    <a href="#deluxeSection">
+                        <img src="https://meltyblood.typelumina.com/resources/img/top_en/limited_banner_d039d3a0256a7dd0b6144ff9ee57ff41.png">
                     </a>
         
                 </div>
-                <div style="display: flex; justify-content: center;">
+                <div>
     
                     <div class="info">
         
@@ -142,12 +142,11 @@
         
         <div class="reborn-section" style="display: flex; justify-content: center;">
 
-            <div class="section-wrapper">
-
+            <div>
                 <div class="rebornTopSection scroll-container">
 
-                    <div style="display: flex; justify-content: center;" class="scroll-element js-scroll slide-left">
-                        <img class="top-reborn-img " src="https://meltyblood.typelumina.com/resources/img/top_en/v2_title_0654cb31280264331b0ed09b6f859a2b.png" alt="">
+                    <div class="scroll-element js-scroll slide-left">
+                        <img src="https://meltyblood.typelumina.com/resources/img/top_en/v2_title_0654cb31280264331b0ed09b6f859a2b.png" alt="">
                     </div>
                     <p class="text-block top-reborn-txt scroll-element js-scroll fade-in-bottom">
                         “MELTY BLOOD” is a series of 2D fighting games based on TYPE-MOON's visual romance novel "Tsukihime. "Since the game's original release on PC in 2002, it has also had a number of ports for arcade, PlayStation®2, and Steam. <br>
@@ -184,7 +183,7 @@
                             Based on the story from "Tsukihime -A piece of blue glass moon-" for the PlayStation®4 and Nintendo Switch™, this new game features a cast of over 10 characters with upgraded visuals as well as HD environments befitting a new "Tsukihime" title. The battle system has also been rebuilt from the ground up for a more modern feel. <br>
                             Fans of the "Tsukihime" series will have the chance to enjoy their favorite special attacks and battles in the form of a 2D character fighting game.
                         </p>
-                        <a class="char-link scroll-element js-scroll fade-in" href="./">
+                        <a class="char-link scroll-element js-scroll fade-in" href="./html/character.html">
                             <img class="char-link-img" src="https://meltyblood.typelumina.com/resources/img/top_en/to_character_btn_df23ca8368b7a5afdb5bd2c926f2a679.png" alt="">
                         </a>
                         <a href="">
@@ -215,19 +214,17 @@
                                 Experience deeper gameplay and more intense battles in this rebirth of a classic.
                             </p>
                         </div> 
-                        <a class="htplay-link" href="./">
+                        <a class="htplay-link" href="./html/how.html">
                             <img class="htplay-link-img scroll-element js-scroll fade-in" src="https://meltyblood.typelumina.com/resources/img/top_en/to_htp_btn_0a89eb47f7ff1f6fc1286e7567b41e90.png" alt="">
                         </a>
                     </div>
 
                 </div>
-                
-
             </div>
 
         </div>
 
-        <div class="deluxe-section">
+        <div id="deluxeSection" class="deluxe-section">
 
             <h2 class="deluxe-top-text">
                 <img src="https://meltyblood.typelumina.com/resources/img/top_en/v5_title_b137a721909e59d45f7686be93fe830d.png">
@@ -247,7 +244,7 @@
                 </div>
             </div>
             <div class="deluxe-prod-info-link">
-                <a href="./">
+                <a href="./html/product.html">
                     <img src="https://meltyblood.typelumina.com/resources/img/top_en/product_info_btn_dba6d1d1f4eaff819a02677af8c54efd.png">
                 </a>
             </div>
@@ -326,11 +323,9 @@
             </div>
         </footer>
 
-        <a href="./" class="backToTop-btn"><img src="https://meltyblood.typelumina.com/resources/img/common/to_top_btn_6244473933c925acbffa73f35729d763.png"></a>
-
     </div>
 
-    <div id="load-wrapper" class="load-wrapper" style="display: block;">
+    <div id="load-wrapper" class="load-wrapper" style="display: none;">
 
         <div class="load-circle1"></div>
         <div class="load-circle2">

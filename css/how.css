@@ -1,0 +1,261 @@
+.page-wrapper {
+  background: url(https://meltyblood.typelumina.com/resources/img/character/bg_4435409ef700bb57e2382f750a28939c.jpg)
+    center top no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+h1,
+.step-1,
+.step-2,
+.step-3 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.step-1-text,
+.step-2-text,
+.step-3-text {
+  display: inline-block;
+  width: 500px;
+  position: relative;
+}
+
+.step-1-text::before,
+.step-2-text::before,
+.step-3-text::before {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+}
+
+.step-1-text::before {
+  content: url(https://meltyblood.typelumina.com/resources/img/en/howto/step01_title_49cd178d0fe5d639435f65b1bd176373.png);
+  top: -180px;
+  left: -25px;
+}
+
+.step-1-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/en/howto/ss1_thumb_bc882f70ffb754d18116f84a142cd6ae.png)
+    0 0;
+  width: 531px;
+  height: 334px;
+  display: inline-block;
+}
+.step-1-img:hover {
+  background: url(https://meltyblood.typelumina.com/resources/img/en/howto/ss1_thumb_bc882f70ffb754d18116f84a142cd6ae.png)
+    0 334px;
+}
+
+.step-2-text::before {
+  content: url(https://meltyblood.typelumina.com/resources/img/en/howto/step02_title_01f1537c85744072caf25198ffe9994e.png);
+  top: -230px;
+  left: -25px;
+}
+
+.step-2-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss2_thumb_ce77b54854950889ae0cd9c0cdefa782.png)
+    0 0;
+  width: 531px;
+  height: 334px;
+  display: inline-block;
+}
+.step-2-img:hover {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss2_thumb_ce77b54854950889ae0cd9c0cdefa782.png)
+    0 334px;
+}
+
+.step-3-text::before {
+  content: url(https://meltyblood.typelumina.com/resources/img/en/howto/step03_title_7c687e27c76cae50c6b54c360b9da814.png);
+  top: -230px;
+  left: -25px;
+}
+
+.step-3-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/en/howto/ss3_thumb_1adf4931f4508132217df9d2c4801213.png)
+    0 0;
+  width: 531px;
+  height: 334px;
+  display: inline-block;
+}
+.step-3-img:hover {
+  background: url(https://meltyblood.typelumina.com/resources/img/en/howto/ss3_thumb_1adf4931f4508132217df9d2c4801213.png)
+    0 334px;
+}
+
+.battle-system {
+  position: relative;
+  display: block;
+  width: 998px;
+  height: 82px;
+  background: url(https://meltyblood.typelumina.com/resources/img/en/howto/btn_battle_d80e72ab21e59317216a5bc8b4536ca7.png)
+    top no-repeat;
+  margin-left: 14px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
+}
+.battle-system:hover {
+  opacity: 0.8;
+}
+
+.play-modes {
+  position: relative;
+  display: block;
+  width: 998px;
+  height: 82px;
+  background: url(https://meltyblood.typelumina.com/resources/img/en/howto/btn_play_mode_3a563c4c19475cb44833ee08edd8a045.png)
+    top no-repeat;
+  margin-left: 14px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
+}
+.play-modes:hover {
+  opacity: 0.8;
+}
+
+.play-modes-list {
+  position: relative;
+  width: 851px;
+  height: 744px;
+  margin: 0 auto;
+  padding: 61px 0 0 60px;
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/play_mode_frame_56378bb8124279af6e0084ee2c2ff33c.png)
+    0 0 no-repeat;
+  display: block;
+}
+.play-modes-list h2 > img {
+  width: 100%;
+}
+
+.play-modes-list li {
+  margin-bottom: 32px;
+}
+.play-modes-list li:nth-child(4) {
+  padding-bottom: 40px;
+}
+
+.play-block {
+  width: 700px;
+  font-size: 18px;
+  line-height: 1.6em;
+  margin-left: 0px;
+  color: white;
+}
+
+.battle-list {
+  display: block;
+}
+.battle-list li {
+  display: flex;
+  margin: 20px 50px;
+}
+
+.system-img {
+  width: 531px;
+  height: 334px;
+}
+.system-img:hover {
+  background-position: 0 -334px;
+}
+.battle-text {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.rapid-beat-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss4_thumb_7d59fb11c1f1c62a81e19168067e54de.png)
+    0 0 no-repeat;
+}
+
+.shield-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss5_thumb_8a4f35338b8b13edec2662c4482bb363.png)
+    0 0 no-repeat;
+}
+
+.circuit-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss6_thumb_a6e3089cba951ee29be85e1d92559dcf.png)
+    0 0 no-repeat;
+}
+
+.ex-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss7_thumb_a428bf0e594eb931987c42316dbeec4f.png)
+    0 0 no-repeat;
+}
+
+.heat-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss8_thumb_379b924289041a314c2d53be9e02075e.png)
+    0 0 no-repeat;
+}
+
+.arcDrive-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss9_thumb_91a6c10bdf9ea30348c57e4ae9afbaf4.png)
+    0 0 no-repeat;
+}
+
+.moonSkill-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss10_thumb_9db974a4f6bf769ea3e07f3f4ab4bf35.png)
+    0 0 no-repeat;
+}
+
+.moonDrive-img {
+  background: url(https://meltyblood.typelumina.com/resources/img/howto/ss11_thumb_696312ea3a45fc8c780624fdc769c70d.png)
+    0 0 no-repeat;
+}
+
+.battle-system-container {
+  position: relative;
+  overflow-y: hidden;
+  animation: hideIt 0.5s 1 forwards ease-in-out;
+}
+
+.play-content {
+  overflow-y: hidden;
+  height: 744px;
+  animation: hideIt2 0.5s 1 forwards ease-in-out;
+}
+
+.showIt {
+  animation: showIt 1s 1 forwards ease-in-out;
+}
+.showIt2 {
+  animation: showIt2 1s 1 forwards ease-in-out;
+}
+
+@keyframes hideIt {
+  0% {
+    height: 2862px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@keyframes showIt {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 2862px;
+  }
+}
+@keyframes hideIt2 {
+  0% {
+    height: 744px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@keyframes showIt2 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 744px;
+  }
+}

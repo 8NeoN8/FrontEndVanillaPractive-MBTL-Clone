@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/how.css">
+    <link rel="icon" href="https://meltyblood.typelumina.com/resources/img/favicon.ico">
+    <title>HOW TO PLAY | MELTY BLOOD: TYPE LUMINA UNOFFICIAL WEBSITE</title>
+</head>
+
+<body onload="load()" id="page">
+
+    <div id="topPage" class="main-page">
+
+        <header class="header">
+            <div class="head-content">
+    
+                <a href="./" class="head-logo-img">
+                    <img src="../image/blank.png">
+                </a>
+                
+                <ul>
+                    <li>
+                        <a href="./">
+                            <img src="../image/blank.png">
+                        </a>
+                    </li>&nbsp;
+                    <li>
+                        <a href="./character.html">
+                            <img src="../image/blank.png">
+                        </a>
+                    </li>&nbsp;
+                    <li>
+                        <a href="./how.html">
+                            <img src="../image/blank.png">
+                        </a>
+                    </li>&nbsp;
+                </ul>
+    
+                <a href="./product.html" class="head-product-img">
+                    <img src="../image/blank.png">
+                </a>
+    
+            </div>
+        </header>
+
+        <div class="page-wrapper scroll-container">
+
+            <h1 class="fades-in">
+                <img src="https://meltyblood.typelumina.com/resources/img/en/howto/title_a9da49498ffad1a344057d73c09939b1.png" alt="how to play image text" class="how-img">
+            </h1>
+    
+            <div class="step-1 scroll-container">
+                <p class="text-block step-1-text scroll-element js-scroll slide-left">
+                    <span class="yellow">More than 10 characters </span>from "Tsukihime -A piece of blue glass moon-" are available to choose from.
+                    Select your favorite character. <br>
+                    Each character has 10 color variations, so pick your favorite before going into battle!
+                </p>
+                <div class="step-1-img scroll-element js-scroll fade-in-bottom"></div>
+            </div>
+            <div class="step-2 scroll-container">
+                <div class="step-2-img scroll-element js-scroll fade-in-bottom"></div>
+                <p class="text-block step-2-text scroll-element js-scroll fade-in-bottom">
+                    Each character has their own unique attacks. Make use of them to take down your opponent and claim victory. <br>
+                    This new system employs <span class="yellow">powerful combination</span> attacks known as <span class="yellow">"Rapid Beats"</span> that can easily be performed by repeatedly pressing the attack button, allowing even players who may less familiar with fighting games to enjoy exhilarating battles.
+                </p>
+            </div>
+            <div class="step-3 scroll-container">
+                <p class="text-block step-3-text scroll-element js-scroll fade-in-bottom">
+                    Enter the single-player story mode to play as your favorite characters as you fight your way through their own <span class="yellow">unique narratives</span> , all written by the amazing <span class="yellow">Kinoko Nasu.</span><br>
+                    Looking for something else? Try beating your fastest fight in Time Attack mode, or see how many battles you can endure before your limited health runs out in Survival mode.
+                </p>
+                <div class="step-3-img scroll-element js-scroll fade-in-bottom"></div>
+            </div>
+    
+            <button id="battle-system-btn" class="battle-system" onclick="checkDisplay(this.id)"></button>
+    
+            <div id="battle-container" class="battle-system-container">
+                <ul class="battle-list">
+                    <li>
+                        <div class="rapid-beat-img system-img"></div>
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill01_title_9f7d9813650de92642b4861607610cfc.png">
+                            <p class="text-block">Press attack buttons in rapid succession to execute this simple but hard-hitting combo!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill02_title_09987baf430f84b10b73b9f3f6e5cfe7.png">
+                            <p class="text-block">Use Shield to block your opponent's attack, and then press an attack button to follow up with a Shield Counter!</p>
+                        </div>
+                        <div class="shield-img system-img"></div>
+                    </li>
+                    <li>
+                        <div class="circuit-img system-img"></div>
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill03_title_b8b5a9cc414448d542073e243e57cc5b.png">
+                            <p class="text-block">The gauge shown at the bottom of the screen. Once filled up, it can be spent to use EX Specials, or trigger a Heat status!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill04_title_53558b288147792f2ab7553f4d5f2607.png">
+                            <p class="text-block">Specials are high-power moves. Spend Magic Circuit gauges to dish out the even more powerful EX Specials!</p>
+                        </div>
+                        <div class="ex-img system-img"></div>
+                    </li>
+                    <li>
+                        <div class="heat-img system-img"></div>
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill05_title_a0b4cc51fb1a285e343aa5aa3a4aee66.png">
+                            <p class="text-block">A heat status uses your Magic Circuit to gives you a boost to your abilities, recovers HP and enables you to use Arc Drive. In a Blood Heat, you'll be able to use Last Arc!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill06_title_6df7a1794c358b6a93f0ef3b0cee48f1.png">
+                            <p class="text-block">Arc Drive is an extremely powerful Special that uses 3 full gauges to perform!<br>Last Arc is a super Special that dishes out incredible damage at the cost of 4 full Magic Circuit gauges, but is also usable under Blood Heat status!</p>
+                        </div>
+                        <div class="arcDrive-img system-img"></div>
+                    </li>
+                    <li>
+                        <div class="moonSkill-img system-img"></div>
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill07_title_642a3d96f568c8eadd7c80d10c7de505.png">
+                            <p class="text-block">Moon Skills are powerful Specials that can be unleashed by consuming the Moon Icons that appear next to the Life Gauge.<br>They deal greater damage than regular Specials, and are not only powerful but easy to activate with simple controls using combinations of the directional buttons and attack buttons.</p>
+                        </div>
+                    </li>
+                    <li class="moonDrive">
+                        <div class="battle-text">
+                            <img src="https://meltyblood.typelumina.com/resources/img/en/howto/skill08_title_90207e7c930e45a2eb43e707d0067184.png">
+                            <p class="text-block">A power-up that can be activated by using all of your Moon Icons any time you have more than one half full.<br>It temporarily boosts your Moon Skill, increases your Magic Circuit or number of possible Jumps/Dashes, as well as providing various other effects.</p>
+                        </div>
+                        <div class="moonDrive-img system-img"></div>
+                    </li>
+                </ul>
+            </div>
+    
+            <button id="play-modes-btn" class="play-modes" onclick="checkDisplay(this.id)"></button>
+    
+            <div id="modesContainer" class="play-content">                
+                <ul class="play-modes-list">
+                    <li class="play-mode-1">
+                        <h2>
+                            <img src="https://meltyblood.typelumina.com/resources/img/howto/mode01_34e9941c340dabbe974078d3cc7e3016.png" alt="">
+                        </h2>
+                        <p class="play-block">Play with your favorite characters in this single player mode.<br>Enjoy each character's story, take on score attack challenges, and more.</p>
+                    </li>
+                    <li class="play-mode-2">
+                        <h2>
+                            <img src="https://meltyblood.typelumina.com/resources/img/howto/mode02_15766c2532e20e4430cb31871ace70ce.png" alt="">
+                        </h2>
+                        <p class="play-block">Battle against other players or the CPU and view replays in this mode.<br>Here you have the freedom to choose the characters, stages, and more.</p>
+                    </li>
+                    <li class="play-mode-3">
+                        <h2>
+                            <img src="https://meltyblood.typelumina.com/resources/img/howto/mode03_1d4b1ca5d6cd3beefd328a7f6fda5c9f.png" alt="">
+                        </h2>
+                        <p class="play-block">*Please note that an internet connection and an online account for the platform you'll be playing on will be required to access this mode.</p>
+                    </li>
+                    <li class="play-mode-4">
+                        <h2>
+                            <img src="https://meltyblood.typelumina.com/resources/img/howto/mode04_4c6179445fb4e57a3e7de27acb42a543.png" alt="">
+                        </h2>
+                        <p class="play-block">Thoroughly practice character moves in this mode.<br>Master the game mechanics and improve at playing the game through free training, tutorials, and missions.</p>
+                        <br>
+                        <p class="play-block">Head on over to Gallery Mode to view character profiles and pixel art, and to listen to character voices, unlocked by meeting certain conditions in the game.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <footer id="pageFooter">
+            <div class="social-link">
+                <a href="https://twitter.com/intent/tweet?text=%22MELTY%20BLOOD%22%2C%20the%202D%20fighting%20game%20that%20takes%20place%20in%20the%20world%20of%20TYPE-MOON%27s%20long-form%20romantic%20visual%20novel%20%22Tsukihime%22%20has%20been%20reborn!%20%23MBTL%0AOfficial%20website%20%E2%86%92&url=https%3A%2F%2Fmeltyblood.typelumina.com%2Fen%2F">
+                    <img src="https://meltyblood.typelumina.com/resources/img/common/sns_twitter_btn_ce13f5f7ba98efec24f652ff23856ca9.png" alt="">
+                </a>
+                <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmeltyblood.typelumina.com%2Fen%2F">
+                    <img src="https://meltyblood.typelumina.com/resources/img/common/sns_facebook_btn_3a46c0cec37bedd46a9e074db27a4cee.png" alt="">
+                </a>
+                <a href="#topPage">
+                    <img src="https://meltyblood.typelumina.com/resources/img/common/to_top_btn_6244473933c925acbffa73f35729d763.png" alt="">
+                </a>
+            </div>
+            <div class="footer-consoles">
+                <img src="https://meltyblood.typelumina.com/resources/img/common/footer_ps4_cba8cb7123968959798ff76f49c5203a.png" alt="">
+                <img src="https://meltyblood.typelumina.com/resources/img/common/footer_ns_07f8819450c02702923d68a9e265d585.png" alt="">
+                <img src="https://meltyblood.typelumina.com/resources/img/common/footer_xone_101d8ca5b46629ae0584ee59167ba2a3.png" alt="">
+                <img src="https://meltyblood.typelumina.com/resources/img/common/footer_steam_562903c4200a2a53f2ff70fecc96b0e2.png" alt="">
+            </div>
+            <div class="rating">
+                <ul>
+                    <li class="rating-img">
+                        <img src="https://meltyblood.typelumina.com/resources/img/common/iarc_cdf30f867464f5f8ac66bd18490f55f5.png" alt="">
+                    </li>
+                    <li class="rating-img">
+                        <img src="https://meltyblood.typelumina.com/resources/img/common_en/esrb_10584ed40401a6915154bf8cee27f34d.png" alt="">
+                    </li>
+                    <li class="rating-img">
+                        <img src="https://meltyblood.typelumina.com/resources/img/common_en/pegi_5662d401813ce4c7e9344504c6531be1.png" alt="">
+                    </li>
+                    <li class="rating-img">
+                        <img src="https://meltyblood.typelumina.com/resources/img/common_en/usk_337d70167b89de5a6c5be4ad63101315.png" alt="">
+                    </li>
+                    <li class="rating-img">
+                        <img src="https://meltyblood.typelumina.com/resources/img/common_en/over18_4a9c807ee8b1ab822eb6155d674d02f5.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="disclaimer">
+                <p>
+                    *This game is still in development. Final visuals may appear different.<br>
+                    * All screenshots are taken from the PlayStation®4 version.
+                </p>   
+                <p class="copyright en">
+                    “<img src="https://meltyblood.typelumina.com/resources/img/common/footer_copy1_5e812d69adc8358c939553d37fab4200.png">” “PlayStation” and “<img src="https://meltyblood.typelumina.com/resources/img/common/footer_copy2_94ceae621baa1043d696022eb15a8b00.png">” are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+                    <br>Nintendo Switch is a trademark of Nintendo.
+                    <br>Microsoft, the Xbox Sphere mark, and Xbox One are trademarks of the Microsoft group of companies.
+                    <br>©2021 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.
+                </p> 
+                <div class="copyR-imgs">
+                    <a href="http://typemoon.com/">
+                        <img src="https://meltyblood.typelumina.com/resources/img/common/footer_tm_logo_337c8bc78ae70358a5c6e0efe3ffd6b7.png" alt="">
+                    </a>
+                    <a href="http://www.typemoon.com/products/tsukihime/">
+                        <img src="https://meltyblood.typelumina.com/resources/img/common/footer_tsukihime_logo_d285ed0b76748e1185cc5b4b40afaf55.png" alt="">
+                    </a>
+                </div>
+                <p>All content on this site, including images, text, sound, and video are the property of TYPE-MOON and may not be used or reproduced without express permission.
+                    <br>©TYPE-MOON / Project LUMINA</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="load-wrapper" class="load-wrapper" style="display: none;">
+
+        <div class="load-circle1"></div>
+        <div class="load-circle2">
+            <div class="load-circle3-animated"></div>
+        </div>
+        <div class="load-text"></div>
+
+    </div>
+
+    <script src="../js/how.js"></script>
+    <script src="../index.js"></script>
+</body>
+
+</html>
